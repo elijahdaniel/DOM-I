@@ -64,3 +64,13 @@ featureTitles[1].innerHTML = siteContent["main-content"]["about-h4"];
 featureTitles[2].innerHTML = siteContent["main-content"]["services-h4"];
 featureTitles[3].innerHTML = siteContent["main-content"]["product-h4"];
 featureTitles[4].innerHTML = siteContent["main-content"]["vision-h4"];
+
+let para = document.querySelectorAll(".main-content p");
+para[0].innerHTML = siteContent["main-content"]["features-content"];
+para[1].innerHTML = siteContent["main-content"]["about-content"];
+para[2].innerHTML = siteContent["main-content"]["services-content"];
+para[3].innerHTML = siteContent["main-content"]["product-content"];
+para[4].innerHTML = siteContent["main-content"]["vision-content"];
+
+let middleImg = document.querySelector("#middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);

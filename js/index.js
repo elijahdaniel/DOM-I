@@ -58,19 +58,25 @@ btn.innerHTML = siteContent["cta"]["button"];
 let headerImage = document.getElementById("cta-img");
 headerImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let featureTitles = document.querySelectorAll(".main-content h4");
-featureTitles[0].innerHTML = siteContent["main-content"]["features-h4"];
-featureTitles[1].innerHTML = siteContent["main-content"]["about-h4"];
-featureTitles[2].innerHTML = siteContent["main-content"]["services-h4"];
-featureTitles[3].innerHTML = siteContent["main-content"]["product-h4"];
-featureTitles[4].innerHTML = siteContent["main-content"]["vision-h4"];
+let titles = document.querySelectorAll("h4");
+titles[0].innerHTML = siteContent["main-content"]["features-h4"];
+titles[1].innerHTML = siteContent["main-content"]["about-h4"];
+titles[2].innerHTML = siteContent["main-content"]["services-h4"];
+titles[3].innerHTML = siteContent["main-content"]["product-h4"];
+titles[4].innerHTML = siteContent["main-content"]["vision-h4"];
+titles[5].innerHTML = siteContent["contact"]["contact-h4"];
 
-let para = document.querySelectorAll(".main-content p");
+let para = document.querySelectorAll("p");
 para[0].innerHTML = siteContent["main-content"]["features-content"];
 para[1].innerHTML = siteContent["main-content"]["about-content"];
 para[2].innerHTML = siteContent["main-content"]["services-content"];
 para[3].innerHTML = siteContent["main-content"]["product-content"];
 para[4].innerHTML = siteContent["main-content"]["vision-content"];
+para[5].innerHTML = siteContent["contact"]["address"];
+para[6].innerHTML = siteContent["contact"]["phone"];
+para[7].innerHTML = siteContent["contact"]["email"];
+para[8].innerHTML = siteContent["footer"]["copyright"];
+
 
 let middleImg = document.querySelector("#middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);

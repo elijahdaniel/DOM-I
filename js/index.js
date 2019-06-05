@@ -41,15 +41,32 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-let nav = document.querySelectorAll('nav a');
-nav[0].text = siteContent["nav"]["nav-item-1"];
-nav[1].text = siteContent["nav"]["nav-item-2"];
-nav[2].text = siteContent["nav"]["nav-item-3"];
-nav[3].text = siteContent["nav"]["nav-item-4"];
-nav[4].text = siteContent["nav"]["nav-item-5"];
-nav[5].text = siteContent["nav"]["nav-item-6"];
+let anchors = document.querySelectorAll('a');
+anchors[0].text = siteContent["nav"]["nav-item-1"];
+anchors[1].text = siteContent["nav"]["nav-item-2"];
+anchors[2].text = siteContent["nav"]["nav-item-3"];
+anchors[3].text = siteContent["nav"]["nav-item-4"];
+anchors[4].text = siteContent["nav"]["nav-item-5"];
+anchors[5].text = siteContent["nav"]["nav-item-6"];
 
-let h1 = document.querySelector(".cta h1");
+anchors.forEach((anchorTag) => { anchorTag.style.color = "green"; })
+
+let nav = document.querySelector("header nav");
+
+let projects = document.createElement("a");
+projects.style.color = "green";
+projects.setAttribute("href", "#");
+projects.innerHTML = "Projects";
+nav.appendChild(projects);
+
+let reviews = document.createElement("a");
+reviews.style.color = "green";
+reviews.setAttribute("href", "#");
+reviews.innerHTML = "Reviews";
+nav.appendChild(reviews);
+
+
+let h1 = document.querySelector("h1");
 h1.innerHTML = siteContent["cta"]["h1"];
 
 let btn = document.querySelector(".cta button");
